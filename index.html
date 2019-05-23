@@ -97,12 +97,12 @@
 
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="技术之巅">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="技术之巅">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="技术之巅">
 
 
 
@@ -120,7 +120,7 @@
   };
 </script>
 
-  <title>Hexo</title>
+  <title>技术之巅</title>
   
 
 
@@ -180,7 +180,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">技术之巅</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -337,16 +337,183 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/23/JS历程心得/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="陈帅元">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="技术之巅">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/23/JS历程心得/" class="post-title-link" itemprop="url">读 《 Web 研发模式的演变 》与《Javascript:世纪机器语言》</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-23 14:29:04 / Modified: 17:03:58" itemprop="dateCreated datePublished" datetime="2019-05-23T14:29:04+08:00">2019-05-23</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;读了两篇文章，内心还是很震撼的，在这之前，我学习知识都是直接找教程，翻阅资料，写几个小demo，没有去了解我所学的东西的发展历程，《Web研发模式的演变》这篇文章讲述了web的前世今生，不断的在进化，不停的在摸索更好的方式。所以如今的Web火热不是没有理由。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;先讲述Web演变的感受，文中的第一个时代是简单明快的早期时代，也是web刚刚兴起的时候，几个人配合就可以完成所有的开发，没有明确前后端分离，各司其职的说法，这个可以理解，早期的时候没有这么多的业务，可能仅仅静态展示页面就可以满足大部分的需求。随着电脑的普及，Web得到广泛的应用，业务变得复杂，之前的前后端代码混合在一起无疑加大了维护成本。接着后端为主的MVC时代，前后端有了明显的分离，前端开发者写好模板，后端开发去套用模板，知道不同的代码写在对应的地方，当然双方来回是有沟通成本的，并且controller页面路由应该是前端应该关注的地方，但是由后端实现，所以前后端职责依旧纠缠不清。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;AJAX带来的SPA（单页面应用）时代，业务的复杂从后端推向了前端，后端只要写好接口，前端通过ajax调用接口，前后端分工可以是非常清晰了，但是这也意味着前端的代码量更多，变得更加的复杂，浏览器端维护起来不容易。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;为了降低前端的复杂度，出现众多的框架，如angular.js,vue.js等框架，对前端工作进一步划分，前端代码的分层，使得前端开发并行，本地的开发，后端只要专注在业务逻辑就可以了。随着nodejs的兴起，JavaScript可以跑到服务器上，可以控制路由、模板、cookie等，单页面或者多页面应用，前端都是可以自由调控，后端则可以专注写业务逻辑。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Web的发展，我可以理解前端为一个小孩的成长，试着挣开怀抱，走向独立。JavaScript作为web的交互语言，从简单的任务，到现在已经扛起了Web前后端的大旗，文中说node会给前端带来新的飞跃，我在学校的时候在课堂上老师说，Javascript可能会统一Web，这也让很多同学开始关注。期待js能够带来惊喜吧。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;第二篇文章《javascript:世纪机器语言》，前面文中介绍JavaScript无处不在的应用，在任何浏览器上的应用到可以操纵硬件，真的厉害，在GitHub上浏览，可以说是遍地是JavaScript，脑海里冒出一句话：现代不懂JavaScript的程序员合格吗？文章中间讲述了这门语言让人又爱又恨，它的设计很拙劣，据我所知道的，JavaScript是网景公司和sun公司花了几天的时间设计完成的，很多地方不严谨，但这不影响它的流行，但是问题总要解决的，随后出现基于JavaScript的新语言出现，如typescript，coffeescript应运而生，写好的文件编译成Javascript,从而使代码有约束性，趋于完美的表达。这些所做的，都是使JavaScript完善，JavaScript强大，意味着web的强盛，相辅相成。</p>
+<p>如今是Web2.0时代，期待下一代会是什么样子，希望自己也能加入其中，带给我更多的惊喜。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/23/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="陈帅元">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术之巅">
     </span>
 
     
@@ -500,7 +667,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">陈帅元</p>
               <div class="site-description motion-element" itemprop="description"></div>
           </div>
 
@@ -511,14 +678,56 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -561,7 +770,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">陈帅元</span>
 
   
 
