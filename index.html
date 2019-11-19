@@ -337,6 +337,207 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/19/git基本操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="陈帅元">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术之巅">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/11/19/git基本操作/" class="post-title-link" itemprop="url">git 基本操作</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-11-19 14:29:04 / Modified: 18:26:30" itemprop="dateCreated datePublished" datetime="2019-11-19T14:29:04+08:00">2019-11-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>说起最详细的git教程还要属阮一峰大神写得，这里贴出地址：<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html</a></p>
+<p>我要写的是我日常使用的推送拉取等基本功能，后续还会通过应用不断完善。</p>
+<h4 id="创建新分支并与线上分支关联"><a href="#创建新分支并与线上分支关联" class="headerlink" title="创建新分支并与线上分支关联"></a>创建新分支并与线上分支关联</h4><blockquote>
+<p>git checkout -b chen origin/dev “chen”是创建本地的分支，”dev”是”chen”追踪的分支.</p>
+</blockquote>
+<h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><blockquote>
+<p>git branch</p>
+</blockquote>
+<h4 id="查看修改文件"><a href="#查看修改文件" class="headerlink" title="查看修改文件"></a>查看修改文件</h4><blockquote>
+<p>git status</p>
+</blockquote>
+<h4 id="查看提交内容"><a href="#查看提交内容" class="headerlink" title="查看提交内容"></a>查看提交内容</h4><blockquote>
+<p>git log</p>
+</blockquote>
+<h4 id="查看提交内容的具体信息"><a href="#查看提交内容的具体信息" class="headerlink" title="查看提交内容的具体信息"></a>查看提交内容的具体信息</h4><blockquote>
+<p>git show commit_id(git log可以看到icd23434就是commit_id)</p>
+</blockquote>
+<h4 id="拉取dev分支"><a href="#拉取dev分支" class="headerlink" title="拉取dev分支"></a>拉取dev分支</h4><blockquote>
+<p>git pull origin dev</p>
+</blockquote>
+<h4 id="提交所有文件到暂存区"><a href="#提交所有文件到暂存区" class="headerlink" title="提交所有文件到暂存区"></a>提交所有文件到暂存区</h4><blockquote>
+<p>git add .</p>
+</blockquote>
+<h4 id="推到本地仓库"><a href="#推到本地仓库" class="headerlink" title="推到本地仓库"></a>推到本地仓库</h4><blockquote>
+<p>git commit -m “说明”</p>
+</blockquote>
+<h4 id="切换到分支dev"><a href="#切换到分支dev" class="headerlink" title="切换到分支dev"></a>切换到分支dev</h4><blockquote>
+<p>git checkout dev</p>
+</blockquote>
+<h4 id="合并chen分支提交的文件"><a href="#合并chen分支提交的文件" class="headerlink" title="合并chen分支提交的文件"></a>合并chen分支提交的文件</h4><blockquote>
+<p>git merge chen</p>
+</blockquote>
+<h4 id="推送到dev远程分支"><a href="#推送到dev远程分支" class="headerlink" title="推送到dev远程分支"></a>推送到dev远程分支</h4><blockquote>
+<p>git push origin dev</p>
+</blockquote>
+<h4 id="新建本地分支和远程分支关联"><a href="#新建本地分支和远程分支关联" class="headerlink" title="新建本地分支和远程分支关联"></a>新建本地分支和远程分支关联</h4><blockquote>
+<p>git checkout -b dev<br> git pull origin dev</p>
+</blockquote>
+<h4 id="提交代码时-线上改动同文件需要merge"><a href="#提交代码时-线上改动同文件需要merge" class="headerlink" title="提交代码时,线上改动同文件需要merge"></a>提交代码时,线上改动同文件需要merge</h4><blockquote>
+<p>git stash<br> git pull<br> git stash pop<br> git add <file><br> …..</file></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/18/Linux 安装phpredis/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1021,7 +1222,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1042,7 +1243,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1067,7 +1270,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
